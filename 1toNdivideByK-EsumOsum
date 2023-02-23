@@ -1,0 +1,27 @@
+/*
+Program to print to print all those numbers from 1 upto n 
+which are divisible by k and also print evensum and oddsum from those divisible.
+Assingment-2 : Day-16 : Author-Tanishq Deerghasi 
+*/
+
+
+#include<stdio.h>
+int main()
+{
+	int n,k,esum=0,osum=0,i;
+	scanf("%d %d",&n,&k);
+	
+	for(i=1;i<=n;i++)
+	{
+		if(i%k==0)
+		{
+			printf("%d\t",i);
+			if(i%2==0)
+				esum+=i;
+			else
+				osum+=i;	
+		}
+	}
+	printf("\n%d %d",esum,osum);
+	return 0;
+}
