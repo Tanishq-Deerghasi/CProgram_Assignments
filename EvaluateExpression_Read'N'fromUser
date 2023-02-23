@@ -19,4 +19,5 @@ int main()
 		sum=sum+(1/i);
 			
 	printf("%.4f",sum);
+	return 0;
 }
