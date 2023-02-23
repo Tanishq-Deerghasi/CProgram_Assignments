@@ -1,0 +1,26 @@
+/*
+Program to print given number in reverse 
+Assingment-3 : Day-18 : Author-Tanishq Deerghasi 
+*/
+
+
+#include<stdio.h>
+int main()
+{
+	long int r,n,m,rev=0;
+	
+	printf("enter number");
+	scanf("%ld",&n);
+	
+	m=n;
+	
+	while(m)
+	{
+		r=m%10;
+		rev=rev*10+r;
+		m=m/10;
+	}
+	
+	printf("%ld",rev);
+	return 0;
+}
