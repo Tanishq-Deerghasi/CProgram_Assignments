@@ -1,0 +1,18 @@
+/*
+Program to print to print factorial of n.
+Assingment-3 : Day-16 : Author-Tanishq Deerghasi 
+*/
+
+#include<stdio.h>
+int main()
+{
+	int n,i;
+	long int mul;
+	scanf("%d",&n);
+	
+	for(i=n;i>0;i--)
+		mul*=i;
+	
+	printf("%ld",mul);
+	return 0;
+}
