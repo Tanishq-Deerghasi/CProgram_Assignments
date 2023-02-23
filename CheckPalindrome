@@ -1,0 +1,29 @@
+/*
+Program to print palindrome or not
+Assingment-1 : Day-18 : Author-Tanishq Deerghasi 
+*/
+
+#include<stdio.h>
+int main()
+{
+	long int r,n,m,rev=0;
+	
+	printf("enter number");
+	scanf("%ld",&n);
+	
+	m=n;
+	
+	while(m)
+	{
+		r=m%10;
+		rev=rev*10+r;
+		m=m/10;
+	}
+	
+	if(n==rev)
+		printf("Palindrome");
+	else
+		printf("Not Palindrome");
+	
+	return 0;
+}
