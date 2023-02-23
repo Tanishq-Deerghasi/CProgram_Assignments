@@ -1,0 +1,44 @@
+/*
+Program to print n1 to n2 odd numbers except 3rd number in the range. 
+Read n1 and n2 from the user.
+Assingment-2 : Day-21 : Author-Tanishq Deerghasi 
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n1,n2,i,j=0,k,*a;
+	
+	printf("enter two numbers");
+	scanf("%d %d",&n1,&n2);
+	
+	for(i=n1;i<=n2;i++)
+	{	
+		if(i%2!=0)
+		{
+				j++;
+		}
+	}
+	
+	a = (int*) malloc(j*sizeof(int));
+	
+	for(i=n1,k=0;i<=n2;i++)
+	{	
+		if(i%2!=0)
+		{
+			a[k] = i;
+			k++;
+		}
+	}
+	
+	for(i=0;i<j;i++)
+	{
+		if(i==2)
+			continue;
+		
+		printf("%d ",a[i]);
+	}
+	
+	return 0;
+}
