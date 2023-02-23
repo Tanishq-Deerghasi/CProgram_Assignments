@@ -1,0 +1,21 @@
+/*
+Program to print x to the power of y value.
+Assingment-1 : Day-15 : Author-Tanishq Deerghasi 
+*/
+
+#include<stdio.h>
+int main()
+{
+   long int x,y,pow=1;
+   printf("Enter base:");
+   scanf("%ld",&x);
+   printf("Enter exponent: ");
+   scanf("%ld", &y);
+   while (y)
+   {
+      pow*= x;
+      y--;
+   }
+   printf("result = %ld",pow);
+   return 0;
+}
