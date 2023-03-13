@@ -1,0 +1,30 @@
+/*
+Title: Program to print sum of array elements
+Author: Tanishq Deerghasi 
+Date: 13-03-2023
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int *p,i,n,sum=0;
+	
+	//Enter array size
+	scanf("%d",&n);
+	
+	//dynamic memory allocation
+	p = (int *) malloc(n*sizeof(int));
+	
+	//Reading array elements
+	for(i=0;i<n;i++)
+		scanf("%d",&p[i]);
+		
+	//Adding array elements
+	for(i=0;i<n;i++)
+		sum+=p[i];
+	
+	//Printing SUM
+	printf("%d",sum);
+	return 0;
+}
