@@ -1,0 +1,40 @@
+/*
+Title: Program to print MAX & MIN numbers of array elements
+Author: Tanishq Deerghasi 
+Date: 13-03-2023
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int *p,i,n,j,temp=0;
+	
+	//Enter array size
+	scanf("%d",&n);
+	
+	//dynamic memory allocation
+	p = (int *) malloc(n*sizeof(int));
+	
+	//Reading array elements
+	for(i=0;i<n;i++)
+		scanf("%d",&p[i]);
+	
+	//sorting array	
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<=i;j++)
+		{
+			if(p[i]<p[j])
+			{
+				temp = p[i];
+				p[i] = p[j];
+				p[j] = temp;
+			}
+		}
+	}
+	
+	//printing max and min numbers
+	printf("%d %d",p[n-1],p[0]);
+	return 0;
+}
