@@ -1,0 +1,22 @@
+/*
+Title:Program to find cube using functions
+Author: Tanishq Deerghasi
+Date:17-03-2023
+*/
+
+#include<stdio.h>
+int cube(int x)
+{
+	int y = x*x*x;
+	return y;
+}
+
+int main()
+{
+	int n,c;
+	printf("Enter N value");
+	scanf("%d",&n);
+	c = cube(n);
+	printf("Cube of %d is %d",n,c);
+	return 0;
+}
