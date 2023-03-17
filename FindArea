@@ -1,0 +1,22 @@
+/*
+Title:Program to find area of rectangle
+Author: Tanishq Deerghasi
+Date:17-03-2023
+*/
+
+#include<stdio.h>
+int recArea(int x,int y)
+{
+	int a = x * y;
+	return a;
+}
+
+int main()
+{
+	int l,b,ar;
+	printf("Enter Length & Breadth");
+	scanf("%d %d",&l,&b);
+	ar = recArea(l,b);
+	printf("Length=%d , Breadth=%d, Area=%d",l,b,ar);
+	return 0;
+}
