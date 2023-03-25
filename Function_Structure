@@ -1,0 +1,41 @@
+/*
+Title:Write a program to structure with function
+Author: Tanishq Deerghasi
+Date: 24-03-2023
+*/
+
+#include<stdio.h>
+#include<conio.h>
+struct timea
+{
+int hrsa;
+int minsa;
+};
+struct timeb
+{
+int hrsb;
+int minsb;
+};
+void timec(struct timea one,struct timeb two);
+void main()
+{
+struct timea one1;
+struct timeb two2;
+
+printf("enter the time 1 hrs");
+scanf("%d",&one1.hrsa);
+printf("enter the time 1 mins");
+scanf("%d",&one1.minsa);
+printf("enter the time 2 hrs");
+scanf("%d",&two2.hrsb);
+printf("enter the time 2 mins");
+scanf("%d",&two2.minsb);
+timec(one1,two2);
+}
+void timec(struct timea one1,struct timeb two2)
+{
+int c,d;
+c=one1.hrsa+two2.hrsb;
+d=one1.minsa+two2.minsb;
+printf("the total hrs is %d and total mins is %d",c,d);
+}
