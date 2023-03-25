@@ -1,0 +1,30 @@
+/*
+Title:Write a program to structure with array
+Author: Tanishq Deerghasi
+Date: 24-03-2023
+*/
+
+#include<stdio.h>
+#include<conio.h>
+struct std
+{
+int id;
+float fp;
+};
+void main()
+{ int i;
+float feepaid=0;
+struct std x[5];
+for(i=0;i<5;i++)
+{
+printf("enter the student id ");
+scanf("%d",&x[i].id);
+printf("enter the fee paid by student ");
+scanf("%f",&x[i].fp);
+}
+for(i=0;i<5;i++)
+{
+feepaid=feepaid+x[i].fp;
+}
+printf(" total fee paid = %f",feepaid);
+}
